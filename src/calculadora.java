@@ -134,42 +134,58 @@ public class calculadora extends javax.swing.JFrame {
         botonSuma.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // obtener el valor del boton
+                //obtener el valor del boton
                 String digito = botonSuma.getText();
-                // agregar el valor al JLabel
-                txtOperaciones.setText(txtOperaciones.getText() + digito);
+                // verificar si ya existe una barra al final del texto
+                if(!txtOperaciones.getText().endsWith("+")){
+                    // agregar el valor al JLabel
+                    txtOperaciones.setText(txtOperaciones.getText()+"+");
+                }
             }
         });
+
 
         botonResta.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //obtener el valor del boton
                 String digito = botonResta.getText();
-                // agregar el valor al JLabel
-                txtOperaciones.setText(txtOperaciones.getText()+digito);
+                // verificar si ya existe una barra al final del texto
+                if(!txtOperaciones.getText().endsWith("-")){
+                    // agregar el valor al JLabel
+                    txtOperaciones.setText(txtOperaciones.getText()+"-");
+                }
             }
         });
+
 
         botonMulti.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //obtener el valor del boton
                 String digito = botonMulti.getText();
-                // agregar el valor al JLabel
-                txtOperaciones.setText(txtOperaciones.getText()+digito);
+                // verificar si ya existe una barra al final del texto
+                if(!txtOperaciones.getText().endsWith("*")){
+                    // agregar el valor al JLabel
+                    txtOperaciones.setText(txtOperaciones.getText()+"*");
+                }
             }
         });
+
 
         botonDiv.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //obtener el valor del boton
                 String digito = botonDiv.getText();
-                // agregar el valor al JLabel
-                txtOperaciones.setText(txtOperaciones.getText()+digito);
+                // verificar si ya existe una barra al final del texto
+                if(!txtOperaciones.getText().endsWith("/")){
+                    // agregar el valor al JLabel
+                    txtOperaciones.setText(txtOperaciones.getText()+"/");
+                }
             }
         });
+
 
         botonBorrar.addActionListener(new ActionListener() {
             @Override
