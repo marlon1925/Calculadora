@@ -170,7 +170,7 @@
             </constraints>
             <properties>
               <font name="Roboto Light" size="28" style="1"/>
-              <text value="25*6+78+90"/>
+              <text value="25*6+78+90+90"/>
             </properties>
           </component>
           <component id="85f8f" class="javax.swing.JLabel" binding="txtResultado">
