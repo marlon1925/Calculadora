@@ -6,26 +6,23 @@ public class calculadora {
     private JPanel panel1;
     private JButton botonCero;
     private JButton botonUno;
-    private JButton botonDos;
-    private JButton botonTres;
-    private JButton botonCuatro;
-    private JButton botonCinco;
-    private JButton botonSeis;
-    private JButton botonIgual;
-    private JButton botonNueve;
-    private JButton botonOcho;
-    private JButton botonSiete;
-    private JButton botonPunto;
     private JLabel mostrar;
-    private JButton botonC;
-    private JButton botonDiv;
-    private JButton botonMulti;
 
-    private JButton botonRes;
     private JPanel JPEspacioP;
     private JLabel txtOperaciones;
     private JLabel txtResultado;
+    private JButton botonTres;
+    private JButton botonDos;
+    private JButton botonCuatro;
+    private JButton botonCinco;
+    private JButton botonSeis;
+    private JButton botonSiete;
+    private JButton botonOcho;
+    private JButton botonNueve;
+    private JButton botonResta;
     private JButton botonSuma;
+    private JButton botonPunto;
+    private JButton botonIgual;
 
     public calculadora() {
         botonCero.addActionListener(new ActionListener() {
@@ -53,7 +50,4 @@ public class calculadora {
     }
 
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
 }
