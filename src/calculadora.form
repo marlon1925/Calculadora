@@ -54,15 +54,6 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="32d3c" class="javax.swing.JLabel" binding="txtOperaciones">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="Roboto Light" size="28" style="1"/>
-              <text value="25*6+78+90+90"/>
-            </properties>
-          </component>
           <component id="85f8f" class="javax.swing.JLabel" binding="txtResultado">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
@@ -72,9 +63,20 @@
               <text value="102"/>
             </properties>
           </component>
+          <component id="ede78" class="javax.swing.JLabel" binding="txtOperaciones">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="36" style="1"/>
+              <horizontalAlignment value="10"/>
+              <horizontalTextPosition value="11"/>
+              <text value=""/>
+            </properties>
+          </component>
         </children>
       </grid>
-      <component id="81d3e" class="javax.swing.JButton">
+      <component id="81d3e" class="javax.swing.JButton" binding="botonBorrar">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="2" height="2"/>
@@ -88,7 +90,7 @@
           <text value="C"/>
         </properties>
       </component>
-      <component id="ece27" class="javax.swing.JButton">
+      <component id="ece27" class="javax.swing.JButton" binding="botonDiv">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="2" height="2"/>
@@ -102,7 +104,7 @@
           <text value="/"/>
         </properties>
       </component>
-      <component id="f73cc" class="javax.swing.JButton">
+      <component id="f73cc" class="javax.swing.JButton" binding="botonMulti">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="2" height="2"/>
@@ -242,21 +244,6 @@
           <text value="9"/>
         </properties>
       </component>
-      <component id="f7fe4" class="javax.swing.JButton" binding="botonCero">
-        <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="2" height="2"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-6322496"/>
-          <enabled value="true"/>
-          <font name="Roboto Light" size="26" style="0"/>
-          <foreground color="-16777216"/>
-          <horizontalTextPosition value="0"/>
-          <text value="0"/>
-        </properties>
-      </component>
       <component id="8e009" class="javax.swing.JButton" binding="botonPunto">
         <constraints>
           <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
@@ -283,6 +270,21 @@
           <foreground color="-16777216"/>
           <horizontalTextPosition value="0"/>
           <text value="="/>
+        </properties>
+      </component>
+      <component id="f7fe4" class="javax.swing.JButton" binding="botonCero">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="2" height="2"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-6322496"/>
+          <enabled value="true"/>
+          <font name="Roboto Light" size="26" style="0"/>
+          <foreground color="-16777216"/>
+          <horizontalTextPosition value="0"/>
+          <text value="0"/>
         </properties>
       </component>
     </children>
