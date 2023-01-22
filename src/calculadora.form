@@ -179,7 +179,7 @@
             </constraints>
             <properties>
               <font name="Roboto Light" size="48" style="1"/>
-              <text value="100"/>
+              <text value="102"/>
             </properties>
           </component>
         </children>
