@@ -60,7 +60,7 @@
             </constraints>
             <properties>
               <font name="Roboto Light" size="48" style="1"/>
-              <text value="102"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="ede78" class="javax.swing.JLabel" binding="txtOperaciones">
