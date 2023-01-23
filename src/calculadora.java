@@ -2,6 +2,8 @@ import javax.lang.model.element.NestingKind;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 public class calculadora extends javax.swing.JFrame {
     private JPanel panel1;
     private JButton botonCero;
@@ -28,7 +30,8 @@ public class calculadora extends javax.swing.JFrame {
     private JButton botonBorrar;
 
     public calculadora() {
-
+        ScriptEngineManager sem = new ScriptEngineManager();
+        ScriptEngine se = sem.getEngineByName("JavaScript");
         botonCero.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -206,6 +209,18 @@ public class calculadora extends javax.swing.JFrame {
             }
         });
 
+
+        botonIgual.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    String resultado = se.eval(txtOperaciones.getText()).toString();
+                    txtResultado.setText(resultado);
+                } catch (Exception ex) {
+                    System.out.println("Error de sintaxis");
+                }
+            }
+        });
     }
 
     public static void main (String[]args){
