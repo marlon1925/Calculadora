@@ -214,6 +214,8 @@ public class calculadora extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    // con la instancia de la clases ScritpEngine, se puede evaluar operaciones
+                    //aritmeticas con el metodo eval
                     String resultado = se.eval(txtOperaciones.getText()).toString();
                     txtResultado.setText(resultado);
                 } catch (Exception ex) {
